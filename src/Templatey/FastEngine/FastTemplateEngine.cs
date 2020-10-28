@@ -8,7 +8,7 @@ namespace Templatey.FastEngine
     public class FastTemplateEngine : ITemplateEngine
     {
         public ITemplate Parse(
-            ReadOnlySpan<char> buffer,
+            ReadOnlyMemory<char> buffer,
             ParseContext context
         )
         {

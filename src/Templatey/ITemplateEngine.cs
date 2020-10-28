@@ -8,7 +8,7 @@ namespace Templatey
     public interface ITemplateEngine
     {
         ITemplate Parse(
-            ReadOnlySpan<char> buffer,
+            ReadOnlyMemory<char> buffer,
             ParseContext context
         );
         

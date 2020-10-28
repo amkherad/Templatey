@@ -3,12 +3,12 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Templatey.LightEngine
+namespace Templatey.LightEnginev
 {
     public class LightTemplateEngine : ITemplateEngine
     {
         public ITemplate Parse(
-            ReadOnlySpan<char> buffer,
+            ReadOnlyMemory<char> buffer,
             ParseContext context
         )
         {
